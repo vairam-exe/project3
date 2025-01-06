@@ -17,12 +17,26 @@ import {
 
 // Mock data - In real app, this would come from a JSON file
 const mockPhishingSites = [
-  'https://en-sso-treezor-z-cdn.webflow.io/',
-  'https://startrezorio.webflow.io/',
-  'https://metacktesionsxtion.webflow.io/',
-  '	https://help--ai--trezorsuite.webflow.io/',
-  'https://startrezorio.webflow.io/',
-  'https://metacktesionsxtion.webflow.io/',
+  'https://fixdappnode.pages.dev',
+  'https://logowaniiepekao-24.com/',
+  'https://mts.pagen.io/',
+  'https://claim2.pages.dev',
+  'https://www.boxcafecomdeus.life',
+  'https://seuspontos-agora.com',
+  'https://poltd.net',
+  'https://koiidapbundle.pages.dev',
+  'https://cafecomdeusbr.com/',
+  'https://futurglico.shop/cafe/cafecomdeuspai25.shop/index.html',
+  'https://cafecomdeusbr.site/',
+  'https://manysex.com',
+  'https://comdeuspai.site',
+  'https://smartmigratez.com',
+  'http://www.gsuplemntoss.shop',
+  'https://loja.gsupllementtos.site/',
+  'https://livropaicomdeus.com',
+  'https://maskcoin.net',
+  'https://cafecomdeusbr.online/',
+  'https://cafecomdeus-desconto.store/',
 ];
 
 const mockSafeSites = [
