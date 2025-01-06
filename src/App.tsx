@@ -40,19 +40,20 @@ const mockPhishingSites = [
 ];
 
 const mockSafeSites = [
-  'google.com',
-  'quora.com',
-  'amazon.com',
-  'linkedin.com',
-  'google.com',
-  'ebay.com',
-  'apple.com',
-  'etsy.com',
-  'fandom.com',
-  'yahoo.com',
-  'yelp.com',
-  'wordpress.com',
-  'walmart.com',
+  'https://pinterest.com',
+  'https://quora.com',
+  'https://amazon.com',
+  'https://linkedin.com',
+  'https://twitter.com',
+  'https://google.com',
+  'https://ebay.com',
+  'https://apple.com',
+  'https://etsy.com',
+  'https://fandom.com',
+  'https://yahoo.com',
+  'https://yelp.com',
+  'https://wordpress.com',
+  'https://walmart.com',
 ];
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
