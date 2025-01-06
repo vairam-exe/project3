@@ -39,12 +39,23 @@ const mockPhishingSites = [
   'https://cafecomdeus-desconto.store/',
 ];
 
+Here is the data formatted as requested:
+
 const mockSafeSites = [
   'google.com',
-  'microsoft.com',
-  'github.com',
+  'quora.com',
+  'amazon.com',
+  'linkedin.com',
+  'google.com',
+  'ebay.com',
+  'apple.com',
+  'etsy.com',
+  'fandom.com',
+  'yahoo.com',
+  'yelp.com',
+  'wordpress.com',
+  'walmart.com',
 ];
-
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('phishing');
