@@ -39,8 +39,6 @@ const mockPhishingSites = [
   'https://cafecomdeus-desconto.store/',
 ];
 
-Here is the data formatted as requested:
-
 const mockSafeSites = [
   'google.com',
   'quora.com',
