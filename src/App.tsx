@@ -17,7 +17,7 @@ import {
 
 // Mock data - In real app, this would come from a JSON file
 const mockPhishingSites = [
-  'malicious-bank.com',
+  'www.malicious-bank.com',
   'fake-paypal-secure.net',
   'login-account-verify.com',
 ];
