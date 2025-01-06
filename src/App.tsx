@@ -17,9 +17,12 @@ import {
 
 // Mock data - In real app, this would come from a JSON file
 const mockPhishingSites = [
-  'www.malicious-bank.com',
-  'fake-paypal-secure.net',
-  'login-account-verify.com',
+  'https://en-sso-treezor-z-cdn.webflow.io/',
+  'https://startrezorio.webflow.io/',
+  'https://metacktesionsxtion.webflow.io/',
+  '	https://help--ai--trezorsuite.webflow.io/',
+  'https://startrezorio.webflow.io/',
+  'https://metacktesionsxtion.webflow.io/',
 ];
 
 const mockSafeSites = [
@@ -197,51 +200,65 @@ function App() {
           </div>
 
           <div className="flex justify-center space-x-4 mb-6">
-            <button
-              className={`px-4 py-2 rounded-md ${
-                activeTab === 'phishing'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
-              onClick={() => setActiveTab('phishing')}
-            >
-              Phishing Sites
-            </button>
-            <button
-              className={`px-4 py-2 rounded-md ${
-                activeTab === 'safe'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
-              onClick={() => setActiveTab('safe')}
-            >
-              Safe Sites
-            </button>
-          </div>
+  <button
+    className={`px-4 py-2 rounded-md ${
+      activeTab === 'phishing'
+        ? 'bg-blue-600 text-white'
+        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+    }`}
+    onClick={() => setActiveTab('phishing')}
+  >
+    Phishing Sites
+  </button>
+  <button
+    className={`px-4 py-2 rounded-md ${
+      activeTab === 'safe'
+        ? 'bg-blue-600 text-white'
+        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+    }`}
+    onClick={() => setActiveTab('safe')}
+  >
+    Safe Sites
+  </button>
+</div>
 
-          <div className="bg-white rounded-lg shadow-md p-6 max-h-96 overflow-y-auto">
-            <ul className="space-y-2">
-              {activeTab === 'phishing'
-                ? filteredPhishingSites.map((site, index) => (
-                    <li
-                      key={index}
-                      className="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-md"
-                    >
-                      <AlertTriangle className="w-5 h-5 text-red-500" />
-                      <span>{site}</span>
-                    </li>
-                  ))
-                : filteredSafeSites.map((site, index) => (
-                    <li
-                      key={index}
-                      className="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-md"
-                    >
-                      <Lock className="w-5 h-5 text-green-500" />
-                      <span>{site}</span>
-                    </li>
-                  ))}
-            </ul>
-          </div>
+<div className="bg-white rounded-lg shadow-md p-6 max-h-96 overflow-y-auto">
+  <ul className="space-y-2">
+    {activeTab === 'phishing'
+      ? filteredPhishingSites.map((site, index) => (
+          <li
+            key={index}
+            className="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-md"
+          >
+            <AlertTriangle className="w-5 h-5 text-red-500" />
+            <a
+              href={site}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline hover:text-blue-800"
+            >
+              {site}
+            </a>
+          </li>
+        ))
+      : filteredSafeSites.map((site, index) => (
+          <li
+            key={index}
+            className="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-md"
+          >
+            <Lock className="w-5 h-5 text-green-500" />
+            <a
+              href={site}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline hover:text-blue-800"
+            >
+              {site}
+            </a>
+          </li>
+        ))}
+  </ul>
+</div>
         </div>
       </section>
 
