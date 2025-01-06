@@ -40,7 +40,6 @@ const mockPhishingSites = [
 ];
 
 const mockSafeSites = [
-  'https://pinterest.com',
   'https://quora.com',
   'https://amazon.com',
   'https://linkedin.com',
