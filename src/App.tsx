@@ -17,6 +17,7 @@ import {
 
 // Mock data - In real app, this would come from a JSON file
 const mockPhishingSites = [
+  'https://phishtank.org/',
   'https://fixdappnode.pages.dev',
   'https://logowaniiepekao-24.com/',
   'https://mts.pagen.io/',
