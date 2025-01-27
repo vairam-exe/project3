@@ -42,16 +42,17 @@ const mockPhishingSites = [
 const mockSafeSites = [
   'https://quora.com',
   'https://amazon.com',
+  'https://facebook.com',
+  'https://espncricinfo.com',
+  'https://msn.com',
+  'https://microsoft.com',
+  'https://microsoft.com',
   'https://linkedin.com',
-  'https://twitter.com',
   'https://google.com',
   'https://ebay.com',
   'https://apple.com',
-  'https://etsy.com',
-  'https://fandom.com',
   'https://yahoo.com',
   'https://yelp.com',
-  'https://wordpress.com',
   'https://walmart.com',
 ];
 function App() {
